@@ -9,7 +9,8 @@ This was made for Beddrock (java is supperior) because currently i am working on
 We use Java 17 or Higher  I might add the 3DModels. 
 
 You can mostly use this as a form of Mod checker. it allows you to with a bit of rewriting check your Modded content without having to boot up the game. 
-Check Items njot there functionality tho thats still for in the game. 
+
+Check Items not there functionality tho thats still for in the game. 
 You need a copy of minecraft to be able to view the items btw 
 
 I appreciate any feedback.
