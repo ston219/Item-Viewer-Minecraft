@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>/workspace/scratch/c43f21da9548/windows-build/BedrockItemViewer.jar</jar>
+  <outfile>/workspace/scratch/c43f21da9548/BedrockItemViewer-Portable/BedrockItemViewer.exe</outfile>
+  <errTitle>Bedrock Item Viewer Portable</errTitle>
+  <downloadUrl>https://learn.microsoft.com/en-us/java/openjdk/download#openjdk-17</downloadUrl>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <stayAlive>false</stayAlive>
+  <restartOnCrash>false</restartOnCrash>
+  <icon>/workspace/scratch/c43f21da9548/windows-build/viewer.ico</icon>
+  <jre>
+    <path>runtime</path>
+    <requiresJdk>false</requiresJdk>
+    <requires64Bit>false</requires64Bit>
+    <initialHeapSize>32</initialHeapSize>
+    <maxHeapSize>512</maxHeapSize>
+    <opt>-Dfile.encoding=UTF-8</opt>
+    <opt>-Dawt.useSystemAAFontSettings=on</opt>
+    <opt>-Dswing.aatext=true</opt>
+  </jre>
+  <messages>
+    <startupErr>Der Bedrock Item Viewer konnte nicht gestartet werden.</startupErr>
+    <jreNotFoundErr>Der mitgelieferte runtime-Ordner fehlt. Bitte das gesamte ZIP entpacken und die EXE darin starten.</jreNotFoundErr>
+    <jreVersionErr>Die mitgelieferte Laufzeit konnte nicht gestartet werden.</jreVersionErr>
+    <launcherErr>Die Java-Laufzeit konnte nicht gestartet werden.</launcherErr>
+  </messages>
+  <versionInfo>
+    <fileVersion>1.1.0.0</fileVersion>
+    <txtFileVersion>1.1.0 Portable</txtFileVersion>
+    <fileDescription>Minecraft Bedrock Item Texture Viewer</fileDescription>
+    <copyright>Independent viewer. Minecraft graphics: Mojang/Microsoft.</copyright>
+    <productVersion>1.1.0.0</productVersion>
+    <txtProductVersion>1.1.0 Portable</txtProductVersion>
+    <productName>Bedrock Item Viewer</productName>
+    <internalName>BedrockItemViewer</internalName>
+    <originalFilename>BedrockItemViewer.exe</originalFilename>
+  </versionInfo>
+</launch4jConfig>

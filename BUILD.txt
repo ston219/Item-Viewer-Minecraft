@@ -1,0 +1,32 @@
+SOURCE / REBUILD (JDK 17 or newer)
+
+Application source: BedrockItemViewer.java, ModTextureImporter.java, L10n.java, RecipeBook.java, RecipeDialog.java, RecipeBook.java, RecipeDialog.java
+Resource folders: assets/, languages/, fonts/, recipes/; catalog.tsv
+There are no third-party Java dependencies.
+
+From this folder, using a JDK on PATH:
+
+  javac -encoding UTF-8 --release 17 -d build BedrockItemViewer.java ModTextureImporter.java L10n.java RecipeBook.java RecipeDialog.java RecipeBook.java RecipeDialog.java
+  jar --create --file RebuiltViewer.jar --main-class BedrockItemViewer -C build . -C . assets -C . languages -C . fonts -C . recipes -C . catalog.tsv
+  runtime\bin\java.exe -jar RebuiltViewer.jar --check
+  runtime\bin\java.exe -jar RebuiltViewer.jar
+
+The distributed EXE reuses the original Launch4j native launcher and embeds
+the updated JAR; it does not depend on the separate BedrockItemViewer.jar.
+To generate a new EXE after future source changes, use Launch4j with the new
+JAR, a GUI header, chdir '.', bundled JRE path 'runtime', and a 512 MiB heap.
+The JRE's javaw.exe can also launch the rebuilt JAR without a console window.
+
+Command-line diagnostics:
+  runtime\bin\java.exe -jar BedrockItemViewer.jar --check
+  runtime\bin\java.exe -jar BedrockItemViewer.jar --list path\to\addon.mcaddon
+  runtime\bin\java.exe -jar BedrockItemViewer.jar --list path\to\mod.jar --all
+  runtime\bin\java.exe -jar BedrockItemViewer.jar --screenshot preview.png en
+
+Screenshots can use any of en/de/tr/fr/es/it/ja/ko and an optional package path
+after the language code. Diagnostic screenshot language overrides do not save
+a language preference. No saved preference is included in this distribution.
+
+Recipe diagnostics:
+  runtime\bin\java.exe -jar BedrockItemViewer.jar --recipes minecraft:diamond_sword
+  runtime\bin\java.exe -jar BedrockItemViewer.jar --recipe-screenshot recipe.png minecraft:diamond_sword en

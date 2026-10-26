@@ -1,0 +1,12 @@
+Version 1.4 — 2026-10-26
+Task 1: crafting button; 1,892 official recipe definitions plus 16 documented bed recipes.
+Task 2: full item audit after task 1.
+13,103 general assertions + 177 recipe assertions passed.
+Crafting table checked explicitly: four planks in the 2x2 inventory grid; larger recipes use 3x3.
+All 1,623 item selections/recipe associations verified.
+All original image pixels and all 12,984 localized item names checked.
+29 outdated spawn-egg images corrected.
+Seven full-catalog contact sheets reviewed.
+Three real add-on imports verified, including supported recipes.
+Native Windows EXE recipe view verified. English remains the first-launch default.
+See ITEM-PRUEFUNG.txt and recipes/SOURCES.txt for detail and limits.

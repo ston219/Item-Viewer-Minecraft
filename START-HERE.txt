@@ -1,0 +1,126 @@
+BEDROCK / MOD ITEM VIEWER — PORTABLE 1.4
+
+HOW TO CRAFT
+1. Select an item in the library.
+2. Click How to craft, below the preview beside Save original PNG.
+3. If several recipes are available, choose one from the recipe menu.
+The window shows the required station, ingredient layout, total ingredient
+quantities and result quantity. Hover over cells to see ingredient names.
+Recipes that fit personal crafting use a 2x2 inventory grid and also work at a
+crafting table. Larger recipes show the required 3x3 crafting-table grid.
+The crafting table itself is included: four planks in a 2x2 square.
+A # badge means an ingredient group; the icon is only one example of the group.
+Shapeless recipes allow any arrangement. Furnace recipes list the applicable
+stations; fuel may be required. Smithing shows template, base and addition.
+Brewing recipes show potion type and reagent; blaze powder fuel is also needed.
+Potion effects and bed/banner colors may share one catalog item identifier.
+
+Recipe data includes 1,892 original recipe definitions from the same official
+Mojang release. Ordinary bed recipes are absent from those sample files, so
+16 color recipes were added from the official Minecraft guide, using three
+matching wool blocks and three oak planks. Other wood types also work.
+https://www.minecraft.net/en-us/article/spawning-and-dying
+Source attribution distinguishes original data, documented supplements and
+imported recipes. A missing recipe means no supported recipe is available in
+this dataset; it does not prove the item cannot be crafted in the game.
+The generic armor-trim definition has no new output ID and is not indexed as
+creation of a new item. Recipes with explicit output IDs are linked to items.
+
+MOD RECIPES
+Bedrock recipe files inside imported add-ons/resource bundles are also read.
+Supported standard Java recipe formats include shaped/shapeless crafting,
+smelting, blasting, smoking, campfire cooking, stonecutting and smithing transforms.
+Custom machine or scripted recipes may be unsupported and are listed in Import
+details. PNGs and resource-only packs frequently contain no recipe definitions.
+Imported recipes replace matching vanilla recipe identifiers. Other vanilla
+file variants are preserved even if upstream files share a description ID.
+No package code, scripts, Java classes or game engine are executed.
+
+ALL VANILLA ITEMS INCLUDED
+This version includes all 1,623 unique item identifiers from Mojang's official
+stable Bedrock sample release v1.26.50.4. Every entry has an official source
+image and an official display name in each of the eight supported languages.
+No Minecraft executable, installation folder or manual vanilla import is needed.
+
+START
+1. Extract the complete portable ZIP to a writable folder.
+2. Open BedrockItemViewer.exe. Keep runtime/ beside the EXE.
+3. Choose All and search by name or item ID, or select a category.
+No separate Java installation is required. The application works offline.
+
+LANGUAGES
+First launch starts in English, regardless of the Windows language.
+Available: English, Deutsch, Türkçe, Français, Español, Italiano, 日本語, 한국어.
+The language menu is at the top right. Your selection is saved beside the app
+in viewer-settings.properties. Delete that file to reset the English default.
+No saved preference is included in the distributed ZIP.
+Menus, controls, messages and all 1,623 vanilla item names are translated.
+Imported mod names use their filenames and are not automatically translated.
+Native language labels, Japanese and Korean use the included Noto font.
+
+WHAT THE PREVIEW SHOWS
+The preview displays 2D source images. Placeable blocks show a flat block-face
+texture, rather than Minecraft's inventory cube/model. Some model items show
+their source texture sheet. Animated textures may show their full frame strip.
+The catalog covers all unique IDs in the stated release. Variants sharing one
+ID, including potion effects, bed colors and banner patterns, are not separate
+registry entries. The default bed preview uses the white bed item sprite.
+Raw item IDs include entries that may be unavailable in a normal survival game.
+
+MOD / ADD-ON IMPORT
+Open package / PNG accepts .mcaddon, .mcpack, .zip, .jar and individual PNGs.
+Select Item textures or All PNG textures before opening the file.
+Bedrock pack folders, nested resource packs and item_texture.json references
+are supported, including custom texture locations and variants.
+Java item images are read from assets/<namespace>/textures/item/ or items/.
+All PNG textures also shows block, entity, interface and other texture sheets.
+Package code is never executed. Gameplay, scripts, loaders and 3D rendering
+are outside the viewer's scope. Encrypted packs and imported TGA files are
+unsupported. The built-in catalog includes PNG conversions of official TGA
+sources; the converted pixel colors/alpha were checked against the originals.
+
+A successful import replaces the previous import and keeps the entire vanilla
+library. A failed import leaves previous textures available. Import details
+shows missing references, skipped images and malformed metadata.
+Bedrock icon references are linked to item IDs when the ID is unique; otherwise
+the texture key/path is shown. Java IDs inferred from texture paths may differ
+from registered game IDs. Hover over names to read long names/identifiers.
+Save original PNG exports decoded source pixels; preview zoom/grid/rotation
+are not baked in. Converted TGA assets export as PNG. No game assets are edited.
+
+IMPORT LIMITS
+128 MiB input and expanded data including nested archive bytes; 8 MiB per image
+or metadata file; 25,000 entries; four nested archive levels; 2,048 imported
+textures; 2,048 x 2,048 pixels per image; 16 megapixels across imported textures.
+
+SOURCES AND LICENSES
+Catalog: metadata/vanilladata_modules/mojang-items.json.
+Images: official resource_pack/textures/.
+Names: official resource_pack/texts/ for all eight languages.
+https://github.com/Mojang/bedrock-samples/releases/tag/v1.26.50.4
+See VANILLA-SOURCE.txt and LICENSE-minecraft-assets.md for source information.
+Minecraft graphics and names belong to Mojang/Microsoft. Independent tool;
+not an official Minecraft product. Original launcher: LICENSE-launcher.txt.
+Temurin Java 17 notices/licenses: runtime/. Noto font: fonts/LICENSE.txt.
+The original 1.1, 1.2 and 1.3 applications have been preserved.
+
+DEUTSCH — KURZANLEITUNG
+Alle 1.623 Item-IDs aus Mojangs Bedrock-Datenstand 1.26.50.4 sind eingebaut.
+Du musst keine Minecraft-Datei einfügen. Öffne BedrockItemViewer.exe aus diesem
+Ordner und suche links nach Namen oder ID. Alle / All zeigt die ganze Bibliothek.
+Blöcke erscheinen als flache 2D-Texturen; einige Modell-Items als Texturbogen.
+Varianten mit derselben ID, etwa Trankeffekte und Bettfarben, sind keine
+zusätzlichen Einträge. Mod-Pakete kannst du weiterhin separat öffnen.
+Beim ersten Start ist Englisch ausgewählt. Die Sprache oben rechts lässt sich
+ändern und wird gespeichert. Der Ordner runtime muss neben der EXE bleiben.
+
+DEUTSCH — HERSTELLUNG
+Wähle links ein Item und klicke unter der Vorschau auf How to craft bzw.
+Herstellen. Das Fenster zeigt Werkbank oder Station, Raster, Zutatenmengen und
+Ausgabemenge. Mehrere Rezepte lassen sich oben auswählen. # steht für eine
+Zutatengruppe. Wenn Rezeptdaten fehlen, wird das deutlich angegeben; daraus
+wird keine falsche Aussage über die Herstellbarkeit abgeleitet.
+Die erneute Item-Prüfung wurde nach Fertigstellung des Knopfs durchgeführt.
+Dabei wurden 29 ältere Spawn-Ei-Symbole durch aktuelle Originalsymbole ersetzt.
+Alle 1.623 IDs, Bilddateien, Namen in acht Sprachen und Rezeptzuordnungen wurden
+geprüft. Ausführliche Ergebnisse: VALIDATION.txt und ITEM-PRUEFUNG.txt.

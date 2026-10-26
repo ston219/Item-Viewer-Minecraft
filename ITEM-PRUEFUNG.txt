@@ -1,0 +1,35 @@
+ITEM-PRÜFUNG — 2026-10-26 — VERSION 1.4
+
+Reihenfolge: Zuerst wurde der How-to-craft-Knopf fertiggestellt und geprüft.
+Danach erfolgte diese vollständige Item-Prüfung.
+
+Ergebnis: bestanden.
+- 1.623 von 1.623 offiziellen Item-IDs vorhanden; keine fehlenden oder doppelten IDs.
+- 1.623 zugeordnete Vorschaubilder lesbar und nicht vollständig transparent.
+- Bildpixel und Transparenz stimmen mit den jeweils zugeordneten Originaldateien
+  aus Mojangs Bedrock-Samples v1.26.50.4 überein.
+- 12.984 lokalisierte Item-Namen geprüft: 1.623 Namen in jeder der acht Sprachen.
+- Ressourcen in Quellordner, JAR und EXE stimmen überein.
+- Auswahl und Rezeptzuordnung für alle 1.623 Items geprüft.
+- 992 Item-IDs haben indexierte Rezepte; für 631 fehlt ein indexiertes Rezept.
+  Fehlende Daten werden nicht als Beweis für Unherstellbarkeit ausgegeben.
+- 13.103 allgemeine und 177 Rezeptprüfungen bestanden.
+- Werkbank gesondert geprüft: vier Bretter im 2x2-Inventarraster; größere
+  Rezepte werden mit dem 3x3-Werkbankraster angezeigt.
+- Alle 7 Kontaktbögen mit sämtlichen Items visuell geprüft.
+
+Korrigiert:
+- 29 ältere Spawn-Ei-Symbole auf aktuelle offizielle Einzelsymbole umgestellt.
+- Beim Import bleiben unveränderte Vanilla-Rezeptvarianten erhalten, auch wenn
+  mehrere Originaldateien dieselbe Beschreibungs-ID verwenden.
+- Bannervarianten erhalten ihre offiziellen Farbnamen in der Rezeptauswahl.
+
+Mod-Regression mit den vorhandenen Add-ons:
+- create_addon.mcaddon: 53 Item-Texturen, 474 unterstützte Rezepte, 0 Hinweise.
+- CreateMovement.mcaddon: 7 Item-Texturen, 88 unterstützte Rezepte, 0 Hinweise.
+- Invent_Aeronautics_1.2.0.mcaddon: 24 Item-Texturen, 794 unterstützte Rezepte, 0 Hinweise.
+
+Prüfumfang: Daten, Ressourcen, 2D-Anzeige, Auswahl, Sprachen und Rezeptverknüpfung.
+Dies ist kein In-Game-Test. Blöcke werden als flache Texturen dargestellt;
+Modell- und Animationstexturen können als Texturbogen/Frame-Streifen erscheinen.
+Originale frühere Viewer-Versionen wurden erhalten.
